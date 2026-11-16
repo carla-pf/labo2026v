@@ -1,0 +1,28 @@
+Verificacion de reproducibilidad: 9031 (original) contra 9084 (re-corrida)
+
+prediccion.txt
+  filas x columnas                               33080 x 102                        33080 x 102                        [IGUAL]
+  md5 (puede diferir en el decimal 14)           2a28bd714513431b81e10935b487dd33   0cf893da8bc1283a17cd71cd17df4284   [DISTINTO]
+  columnas de probabilidad identicas: 53 de 101 · diferencia maxima: 3.1e-13
+  orden de clientes del semillerio               -                                  -                                  [IGUAL]
+
+prediccion_validacion.txt
+  filas x columnas                               32938 x 102                        32938 x 102                        [IGUAL]
+  md5 (puede diferir en el decimal 14)           da3e3e3e4b421ea1ba7639edf3888be9   09dc072057f707377e571593df2bd3a6   [DISTINTO]
+  columnas de probabilidad identicas: 44 de 101 · diferencia maxima: 1.6e-13
+  orden de clientes del semillerio               -                                  -                                  [IGUAL]
+  ganancia 202107, promedio 1300 a 3500          95.2 M                             95.2 M                             [IGUAL]
+
+Archivos de Kaggle (excluyente): 9031 en WF9031/repro, 9084 en WF9084/kaggle
+  corte  9031                               9084                              
+  1900   f538810f65a5f66d35cfa0806d2f4b4c   f538810f65a5f66d35cfa0806d2f4b4c   [IGUAL]
+  2000   3ae2f85ecdb78e05e3672eff65de77d4   3ae2f85ecdb78e05e3672eff65de77d4   [IGUAL]
+  2100   d30a8d08b65494866cc42fc2f589296e   d30a8d08b65494866cc42fc2f589296e   [IGUAL]
+  2200   61e05d9c8daa9ebc7e48db978f8d3cf5   61e05d9c8daa9ebc7e48db978f8d3cf5   [IGUAL]
+  2300   eb8846a5f380a1aed258a30cd9fecde5   eb8846a5f380a1aed258a30cd9fecde5   [IGUAL]
+  2400   a4e55beb37d49154210bafe964f2320d   a4e55beb37d49154210bafe964f2320d   [IGUAL]
+  2500   a793956f46c2baabf9755627094d1535   a793956f46c2baabf9755627094d1535   [IGUAL]
+  2600   ced2da782ce8a0787f35044a9c352123   ced2da782ce8a0787f35044a9c352123   [IGUAL]
+  2700   48c2666058b6e8628bfa6cf0337125fe   48c2666058b6e8628bfa6cf0337125fe   [IGUAL]
+
+[OK] REPRODUCIBLE: los 9 archivos de Kaggle tienen el mismo md5
