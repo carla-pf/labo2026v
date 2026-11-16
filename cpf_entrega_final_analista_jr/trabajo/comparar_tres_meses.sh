@@ -2,7 +2,8 @@
 # P de los tres meses: probabilidad de que B le gane a A en la SUMA de las ganancias de 202107, 202105 y 202103
 # (en cada mes, el promedio de la ventana), remuestreando semillas y clientes DENTRO de cada mes.
 # No es la P del mes (esa la da comparar_corridas.sh, una por mes) ni la de "solo semillas".
-# La regla decide con la P del mes (>= 0,90 en cada mes); la P de los tres meses se informa al lado.
+# Regla (registrada el 15/11 a las 11:52): decide la P de los tres meses (B reemplaza a A si P >= 0,90, ventana general);
+# la P del mes se informa al lado, y el mes que pierde con P < 0,30 se marca.
 #
 # Uso:   cd ~/buckets/b1/labo2026v-modelo-final
 #        bash comparar_tres_meses.sh <A_202107> <B_202107> <A_202105> <B_202105> <A_202103> <B_202103>
@@ -78,7 +79,7 @@ resultado("general")
 resultado("escalada")
 cat("\nP del mes: remuestreo de semillas y clientes dentro de ese mes (la misma que comparar_corridas.sh, con otro sorteo).\n")
 cat("P de los tres meses: lo mismo en cada mes, sumando las tres diferencias. Ninguna de las dos es la de 'solo semillas'.\n")
-cat("Regla: decide la P del mes (>= 0,90 en cada mes, ventana general); la P de los tres meses se informa al lado.\n")
+cat("Regla (15/11): decide la P de los tres meses (>= 0,90, ventana general); la P del mes se informa al lado y el mes con P < 0,30 se marca.\n")
 RR
 
 echo
